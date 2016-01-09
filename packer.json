@@ -15,9 +15,9 @@
       "guest_os_type": "Ubuntu_64",
       "headless": false,
       "http_directory": "http",
-      "iso_checksum": "4d1a8b720cdd14b76ed9410c63a00d0e",
+      "iso_checksum": "15b17c0d95b73081aaf25bb163a0530c",
       "iso_checksum_type": "md5",
-      "iso_url": "http://releases.ubuntu.com/13.10/ubuntu-13.10-server-amd64.iso",
+      "iso_url": "http://cdimage.ubuntu.com/ubuntu-server/daily/current/xenial-server-amd64.iso",
       "shutdown_command": "echo 'shutdown -P now' > shutdown.sh; echo 'vagrant'|sudo -S sh 'shutdown.sh'",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -29,13 +29,13 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "2048"
+          "768"
         ],
         [
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          "4"
+          "1"
         ]
       ],
       "virtualbox_version_file": ".vbox_version"
